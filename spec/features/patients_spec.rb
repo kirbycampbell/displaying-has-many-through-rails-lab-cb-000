@@ -10,6 +10,7 @@ describe "patients", type:  :feature do
       {name: "Michaela Quinn", department: "Internal Medicine"}
     ])
 
+
     Patient.create([
       {name: "Homer Simpson", age:38},
       {name: "Bart Simpson", age:10},
