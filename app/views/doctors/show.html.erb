@@ -1,1 +1,8 @@
-<h1> Show page</h1>
+<h1><%= @doctor.name %></h1>
+<p>Department: <%= @doctor.department %></p>
+<ul>
+  <%= @appointments.each do |appt| %>
+    <li>Patient name: <%= appt.patient_name %></li>
+    <li>Patient name: <%= appt.patient_name %></li>
+    <% end %>
+</ul>
