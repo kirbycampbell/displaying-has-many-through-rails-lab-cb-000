@@ -6,7 +6,8 @@ class DoctorsController < ApplicationController
 
   def show
     @doctor = Doctor.find_by(params[:id])
-    @appointments = Appointment.find_by(params[:doctor_name])
+    @appointments = Appointment.all
+    @appts = @appointments.find_by(params[:doctor_name])
   end
 
   private
