@@ -3,5 +3,5 @@
 
   <%= @appointments.each do |appt| %>
     <li>Patient name: <%= appt.patient_name %></li>
-    <li>Appt Time: <%= appt.appointment_datetime.to_date %></li>
+    <li>Appointment Time: <%= appt.appointment_datetime.to_date %></li>
     <% end %>
