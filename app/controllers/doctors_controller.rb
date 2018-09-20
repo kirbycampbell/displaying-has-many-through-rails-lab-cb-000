@@ -8,6 +8,7 @@ class DoctorsController < ApplicationController
     @doctor = Doctor.find_by(params[:id])
     @appointments = Appointment.all
     @appts = @appointments.find_by(params[:doctor_name])
+    @patient = Patient.find_by(params[:id])
   end
 
   private
