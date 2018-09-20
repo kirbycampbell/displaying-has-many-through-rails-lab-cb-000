@@ -1,6 +1,6 @@
 <h1>All Doctors</h1>
 
   <%= @doctors.each do |doc| %>
-    <li><%= link_to doc.name, doctor_path %></li>
+    <li><%= link_to doc.name, doctors_path(doc) %></li>
 
     <%end%>
