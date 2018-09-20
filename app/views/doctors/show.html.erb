@@ -3,5 +3,5 @@
 
   <%= @appointments.each do |appt| %>
     <li>Patient name: <%= appt.patient_name %></li>
-    <li>Appointment Time: <%= appt.appointment_datetime.to_formatted_s(:rfc822) %> at <%= appt.appointment_datetime.strftime("%H:%M") %></li>
+    <li>Appointment Time: <%= appt.appointment_datetime.to_formatted_s(:long_ordinal) %> at <%= appt.appointment_datetime.strftime("%H:%M") %></li>
     <% end %>
